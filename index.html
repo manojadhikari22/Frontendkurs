@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+   <div class="container">
     <div class="accordion"> 
         <h1>Registration form</h1>  
-    <form method="POST" action="#">
+    <form id="myForm">
         
         <div class="form-group">
             <label for="fullName">Name</label>
-            <input type="text" name="name" placeholder="enter your name" required>
+            <input type="text" id="name" name="name" placeholder="enter your name">
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" name="email" placeholder="enter your email" required>
+            <input type="email" id="email" name="email" placeholder="enter your email">
         </div>
         <div class="form-group">
-            <label for="phonenumber">Contact</label>
-            <input type="number" name="number" placeholder="enter your pbone number" required>
+            <label for="contact">Contact</label>
+            <input type="number" id="contact" name="contact" placeholder="enter your pbone number">
         </div>
 
         <div class="form-group">
             <label for="homeaddress">Address</label>
-            <input type="address" name="Address" placeholder="enter your home addrerss" required>
+            <input type="text" id="address" name="Address" placeholder="enter your home addrerss">
         </div>
        
         <div class="form-group">
         <label for="job">Job position:</label>
-        <select id="job" name="job" required>
-            <option value="developer">Frontend Developer</option>
+        <select id="job" name="job">
+            <option value="Frontend-developer">Frontend Developer</option>
             <option value="designer">Designer</option>
             <option value="developer">Fullstack Developer</option>
             <option value="manager">Manager</option>
@@ -54,7 +54,11 @@
             <input type="submit" value="Register">
         </div>
     </form>
+    <p class="errorMsg"></p>
+    <p class="successMsg"></p>
+    <div class="datas"></div>
     </div>
-    
+</div> 
+<script src="./app.js"></script>
 </body>
 </html>
