@@ -10,7 +10,7 @@ loginForm.addEventListener('submit', (e) =>{
   if(!name || !email || !contact || !address || !job || !resume )
   {
     let errorMsg = document.querySelector('.errorMsg');
-    errorMsg.textContent ='Please add all input value'
+    errorMsg.textContent ='Please add all input value*'
   } else {
     let succssMsg = document.querySelector(".successMsg");
     succssMsg.textContent= "Form submitted successfully";
