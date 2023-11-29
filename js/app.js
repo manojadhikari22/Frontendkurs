@@ -16,7 +16,6 @@ loginForm.addEventListener('submit', (e) =>{
     succssMsg.textContent= "Form submitted successfully";
     loginForm.reset(); // Clear the form fields
     let showsData = document.querySelector(".datas");
-
     showsData.innerHTML = `
     Name: <strong>
      ${name}</strong> <br>
